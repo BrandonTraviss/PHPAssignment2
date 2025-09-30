@@ -72,7 +72,7 @@ $toppingOptions = [
         <!-- Render Size options -->
         <div class="card-group-size">
             <?php foreach($sizeOptions as $size):?>
-                <!-- Compares $_POST to $size, if $_POST does not exist it uses '' to compare to $size. If true echo 'checked' if false echo '' this is used to preserve data incase of bad form submission -->
+                <!-- Compares $_POST['pizzaSize'] to $size, if $_POST does not exist it uses '' to compare to $size. If true echo 'checked' if false echo '' this is used to preserve data incase of bad form submission done for all radio buttons -->
                     <input type="radio"
                     id="<?php echo "$size" ?>"
                     name="pizzaSize" value="<?php echo "$size" ?>" 
@@ -117,7 +117,7 @@ $toppingOptions = [
         <div class="form-head">
             <h3>Cheese Options 🧀</h3>
         </div>
-        <!-- Render Crust options -->
+        <!-- Render Cheese options -->
         <div class="card-group-crust">
             <?php foreach ($cheeseOptions as $cheese): ?>
                 <input type="radio"
