@@ -9,7 +9,6 @@
     $error;
     if($_SERVER["REQUEST_METHOD"] === "POST"){
             $error = "";
-            // Testing
             // Pizza Info
             // Checks if pizzaSize isset if it is not then it concats to error message. This is done for all radios.
             // Ensure pizzaSize is set

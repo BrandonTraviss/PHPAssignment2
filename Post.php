@@ -1,11 +1,9 @@
 <?php
-    // this will handle our CRUD functions (Create for this lesson)
     class Post{
         private $pdo;
         public function __construct(PDO $pdo){
             $this->pdo = $pdo;
         }
-        // save our new post
         public function create($formattedData){
             $sql = "INSERT INTO orders (
                 pizzaSize,
