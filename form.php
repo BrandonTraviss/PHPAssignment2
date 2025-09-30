@@ -25,7 +25,7 @@ $sauceOptions = [
 ];
 // To add more cheese options just add them to the array
 $cheeseOptions = [
-    "Normal Cheese",
+    "Regular Cheese",
     "Extra Cheese",
     "No Cheese",
 ];
