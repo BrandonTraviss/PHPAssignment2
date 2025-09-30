@@ -1,5 +1,7 @@
 <?php
-// Information removed for GitHub upload. Tested and working on Georgian Server.
+// Information removed for github upload. Version with config setup for Georgian Server uploaded to Lampstack.
+// Enter required information for testing in your local environment.
+// Create a database and use the Schema to create the table.
     define("DB_HOST", "");
     define("DB_NAME", "");
     define("DB_USER", "");

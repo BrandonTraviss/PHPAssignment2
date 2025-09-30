@@ -23,6 +23,12 @@ $sauceOptions = [
     "Original",
     "None"
 ];
+// To add more cheese options just add them to the array
+$cheeseOptions = [
+    "Normal Cheese",
+    "Extra Cheese",
+    "No Cheese",
+];
 // To add more toppings just add them to the array here
 $toppingOptions = [
     "Mushrooms 🍄‍🟫",
@@ -77,7 +83,7 @@ $toppingOptions = [
             <?php endforeach; ?>
         </div>
         <div class="form-head">
-            <h3>Crust Type 🫓🧀</h3>
+            <h3>Crust Type 🫓</h3>
         </div>
         <!-- Render Crust options -->
         <div class="card-group-crust">
@@ -107,6 +113,24 @@ $toppingOptions = [
                 </label>
             <?php endforeach; ?>
         </div>
+
+        <div class="form-head">
+            <h3>Cheese Options 🧀</h3>
+        </div>
+        <!-- Render Crust options -->
+        <div class="card-group-crust">
+            <?php foreach ($cheeseOptions as $cheese): ?>
+                <input type="radio"
+                    id="<?php echo htmlspecialchars($cheese) ?>"
+                    name="cheese"
+                    value="<?php echo htmlspecialchars($cheese) ?>"
+                    <?php echo (($_POST['cheese'] ?? '') === $cheese) ? 'checked' : ''; ?>>
+                <label for="<?php echo htmlspecialchars($cheese) ?>" class="card">
+                    <?php echo htmlspecialchars($cheese) ?>
+                </label>
+            <?php endforeach; ?>
+        </div>
+
         <div class="form-head">
             <h3>Select Toppings 🍄‍🟫🫑🌶️🥦🥩</h3>
         </div>

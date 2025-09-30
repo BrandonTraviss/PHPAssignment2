@@ -7,6 +7,7 @@ CREATE TABLE orders (
     addr VARCHAR(255) NOT NULL,
     pizzaSize VARCHAR(10) NOT NULL,
     sauce VARCHAR(20) NOT NULL,
+    cheese VARCHAR(20) NOT NULL,
 	crust VARCHAR(20) NOT NULL,
 	toppings VARCHAR(255),
     deliveryType VARCHAR(20) NOT NULL,

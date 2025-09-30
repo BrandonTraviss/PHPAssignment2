@@ -12,6 +12,7 @@
             // Testing
             // Pizza Info
             // Checks if pizzaSize isset if it is not then it concats to error message. This is done for all radios.
+            // Ensure pizzaSize is set
             if(isset($_POST['pizzaSize'])){
                 $pizzaSize = $_POST['pizzaSize'];
             } else{
@@ -22,6 +23,12 @@
                 $crust = $_POST['crust'];
             } else{
                 $error = $error. "<p>Please Select a crust.</p>";
+            }
+            // Ensure cheese is set
+            if(isset($_POST['cheese'])){
+                $cheese = $_POST['cheese'];
+            } else{
+                $error = $error. "<p>Please Select a cheese option.</p>";
             }
             // Ensure sauce is set
             if(isset($_POST['sauce'])){
@@ -71,7 +78,6 @@
             if (strlen($deliveryInstructions) >100){
                 $error = $error . "<p>Delivery Instructions can only contain 100 characters max.</p>";
             }
-            // Delivery type will always be set so we do not validate (I know postman can be used to send a bad value here but for the scope of this project I am not going to validate this input)
             $deliveryType = $_POST['deliveryType'];
             if(strlen($error) > 0){
                 // Do nothing because we do not have valid inputs
@@ -82,6 +88,7 @@
                 ":pizzaSize" => $pizzaSize,
                 ":crust" => $crust,
                 ":sauce" => $sauce,
+                ":cheese" => $cheese,
                 ":toppings" => $toppings,
                 ":firstName" => $firstName,
                 ":lastName" => $lastName,
