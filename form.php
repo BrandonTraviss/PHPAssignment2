@@ -172,7 +172,7 @@ $toppingOptions = [
                     <div class="input-container">
                         <label for="lastName">Email</label>
                     <!-- Retains information from $_POST if set when order has invalid input -->
-                        <input type="text" name="email" id="email" placeholder="Example@hotmail.com" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>">
+                        <input type="email" name="email" id="email" placeholder="Example@hotmail.com" value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>">
                     </div>
                 </div>
 
