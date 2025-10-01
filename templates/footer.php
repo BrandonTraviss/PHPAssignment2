@@ -13,18 +13,18 @@
         <div class="social-container">
             <div class="logo-container-footer">
                 <a href="#">
-                    <img src="./assets/img/logo.png" alt="">
+                    <img src="./assets/img/logo.png" alt="PizzaHub">
                 </a>
             </div>
             <div class="socials-container">
                 <div class="social-svg-container">
                     <a href="">
-                        <img src="./assets/svg/facebook.svg" alt="">
+                        <img src="./assets/svg/facebook.svg" alt="Facebook">
                     </a>
                 </div>
                 <div class="social-svg-container">
                     <a href="#">
-                        <img src="./assets/svg/twitter.svg" alt="">
+                        <img src="./assets/svg/twitter.svg" alt="Twitter">
                     </a>
                 </div>
                 <div class="social-svg-container">
