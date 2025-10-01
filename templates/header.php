@@ -12,7 +12,7 @@
         <nav class="responsive-nav">
              <div class="logo-container">
                 <a href="index.php">
-                    <img class="logo" src="./assets/img/logo.png" alt="NewsHub">                
+                    <img class="logo" src="./assets/img/logo.png" alt="PizzaHub">                
                 </a>
              </div>
             <menu>
