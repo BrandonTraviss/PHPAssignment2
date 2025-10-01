@@ -9,7 +9,7 @@
             if($this->pdo === null){
                 try{
                     $options = [
-                        PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION
+                            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                     ];
                     $dsn = "mysql:host={$this->host};dbname={$this->db};charset=utf8mb4";
                     $this->pdo = new PDO($dsn, $this->user, $this->pass,$options);
